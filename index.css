@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #d2dbdd;
+}
+
+.heading_style {
+    padding: 18px 0;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+    background-color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+}
+
+.card_body {
+    background-color: #fff;
+    text-transform: uppercase;
+    text-overflow: inherit;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.card {
+    width: 21.25%;
+    margin: 6%;
+    font-size: 13px;
+    transition: all cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #d2dbdd;
+    border-radius: 12px;
+    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    float: left;
+}
+
+.card:hover {
+    box-shadow: 0px 30px, 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+}
+
+.card__img {
+    width: 100%;
+    height: 235px;
+    border-radius: 40px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card__info {
+    background-color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px, 24px, 24px, 24px;
+}
+
+.card__category {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    color: #868686;
+    background-color: #fff;
+}
+
+.card__title {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    background-color: #fff;
+    text-transform: capitalize;
+}
+
+button {
+    padding: 5px, 8px;
+    font-family: "Raleway", sans-serif;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+    outline: none;
+    color: #868686;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.heading {
+    color: blueviolet;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-shadow: 0px 2px 4px #ffe9c5;
+    margin: 70px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* .img_div {
+  display: flex;
+  justify-content: center;
+}
+
+.img_div img {
+  width: 250px;
+  height: 300px;
+}  */
+
+@media all and (max-width: 768px) {
+    .card {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
